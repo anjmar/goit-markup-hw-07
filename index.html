@@ -20,11 +20,11 @@
   <body>
     <!--Section header-->
     <header class="header">
-      <div class="container">
+      <div class="header-container container">
         <div class="header__wrapper">
           <nav class="main-nav">
             <a class="main-nav__logo logo" href="./index.html"
-              >Web<span class="logo__text--black">Studio</span></a
+              >Web<span class="logo__text logo__text--black">Studio</span></a
             >
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -72,7 +72,7 @@
     <!--Section hero-->
     <main>
       <section class="hero section">
-        <div class="container">
+        <div class="hero__container container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero__button button" type="button" data-modal-open>
             Замовити послугу
@@ -81,8 +81,8 @@
       </section>
       <!--Section переваги-->
       <section class="adjectives section">
-        <div class="container">
-          <h2 class="adjectives__title adjectives__title--visually-hidden">Переваги</h2>
+        <div class="adjectives__container container">
+          <h2 class="adjectives__title visually-hidden">Переваги</h2>
           <ul class="adjectives__list">
             <li class="adjectives__item">
               <div class="adjectives__wrapper-svg">
@@ -90,7 +90,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="adjectives__subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <h3 class="adjectives__subtitle heading-3">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="adjectives__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
@@ -101,7 +101,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="adjectives__subtitle">ПУНКТУАЛЬНІСТЬ</h3>
+              <h3 class="adjectives__subtitle heading-3">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="adjectives__text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
@@ -112,7 +112,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="adjectives__subtitle">ПЛАНУВАННЯ</h3>
+              <h3 class="adjectives__subtitle heading-3">ПЛАНУВАННЯ</h3>
               <p class="adjectives__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
@@ -123,7 +123,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="adjectives__subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <h3 class="adjectives__subtitle heading-3">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="adjectives__text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
@@ -133,7 +133,7 @@
       </section>
       <!--Section чим ми займаємося-->
       <section class="works section">
-        <div class="container">
+        <div class="works__container container">
           <h2 class="works__title heading-2">Чим ми займаємося</h2>
           <ul class="works__list">
             <li class="works__item thumb">
@@ -174,7 +174,7 @@
       </section>
       <!--Section наша команда-->
       <section class="team section">
-        <div class="container">
+        <div class="team__container container">
           <h2 class="team__title heading-2">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item profile">
@@ -443,7 +443,7 @@
       </section>
       <!--section clients-->
       <section class="clients section">
-        <div class="container">
+        <div class="clients__container container">
           <h2 class="clients__title heading-2">Постійні клієнти</h2>
           <ul class="clients__list">
             <li class="clients__item">
@@ -493,17 +493,17 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="footer__container container">
         <div class="footer__wrapper">
           <div class="footer__contacts">
-            <a class="logo footer__logo" href="./index.html"
-              >Web<span class="logo__text-white">Studio</span></a
+            <a class="footer__logo logo" href="./index.html"
+              >Web<span class="logo__text logo__text-white">Studio</span></a
             >
             <address class="address">
               <ul class="address__list">
                 <li class="address__item">
                   <a
-                    class="link link--white"
+                    class="address__link link link--white"
                     href="https://goo.gl/maps/JUPpin5RbH5UVB4i6"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -513,7 +513,7 @@
                 </li>
                 <li class="address__item">
                   <a
-                    class="link"
+                    class="address__link link"
                     href="mailto:info@devstudio.com"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
@@ -522,7 +522,7 @@
                 </li>
                 <li class="address__item">
                   <a
-                    class="link"
+                    class="address__link link"
                     href="tel:+380961111111"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
@@ -533,7 +533,7 @@
             </address>
           </div>
           <div class="footer__socials-card socials-card">
-            <h3 class="socials-card__subtitle heading-3">приєднуйтесь</h3>
+            <h3 class="socials-card__subtitle heading-3 heading-3--white">приєднуйтесь</h3>
             <ul class="socials-icons">
               <li class="socials-icons__item">
                 <a
@@ -590,7 +590,9 @@
             </ul>
           </div>
           <div class="form-subscribe">
-            <h3 class="form-subscribe__title heading-3">Підпишіться на розсилку</h3>
+            <h3 class="form-subscribe__title heading-3 heading-3--white">
+              Підпишіться на розсилку
+            </h3>
             <form class="form-subscribe__form form form--horizontal">
               <div class="form__input input">
                 <label class="input__label" for="email"></label>
@@ -602,7 +604,7 @@
                   placeholder="E-mail"
                 />
               </div>
-              <button class="form__button button button--icon" type="submit">
+              <button class="form__button button button--medium button--icon" type="submit">
                 Підписатися<svg class="button__icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
@@ -615,8 +617,8 @@
     <!----------modal window------->
     <div class="backdrop backdrop--hidden" data-modal>
       <div class="modal">
-        <button type="button button-close" class="button-close" data-modal-close>
-          <svg class="button-close__icon" width="18" height="18">
+        <button class="modal__button-close button-close" type="button" data-modal-close>
+          <svg class="button-close__icon" width="11" height="11">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -653,7 +655,7 @@
             ></textarea>
           </div>
         </form>
-        <div class="form-checkbox">
+        <div class="modal__form-checkbox form-checkbox">
           <input class="form-checkbox__input" type="checkbox" id="check" />
           <label class="form-checkbox__label" for="check">
             <span class="form-checkbox__element checkbox-custom">
@@ -665,8 +667,8 @@
             <a class="form-checkbox__link" href="#">Умови договору</a>
           </label>
         </div>
-        <div class="button button--medium">
-          <button class="button" type="submit">Відправити</button>
+        <div class="modal__button">
+          <button class="button button--medium" type="submit">Відправити</button>
         </div>
       </div>
     </div>
