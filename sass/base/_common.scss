@@ -1,0 +1,24 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.heading-2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+.heading-3 {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  &--white {
+    color: var(--white-text-color);
+  }
+}

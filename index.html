@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Section header-->
@@ -28,19 +28,23 @@
             >
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--current link" href="./index.html"
+                <a
+                  class="main-nav__link main-nav__link--current link"
+                  href="./index.html"
                   >Студія</a
                 >
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link link" href="./portfolio.html">Портфоліо</a>
+                <a class="main-nav__link link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link link" href="">Контакти</a>
               </li>
             </ul>
           </nav>
-          <ul class="auth-nav__list">
+          <ul class="auth-nav">
             <li class="auth-nav__item">
               <a
                 class="auth-nav__link link"
@@ -92,7 +96,8 @@
               </div>
               <h3 class="adjectives__subtitle heading-3">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="adjectives__text">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
               </p>
             </li>
             <li class="adjectives__item">
@@ -103,7 +108,8 @@
               </div>
               <h3 class="adjectives__subtitle heading-3">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="adjectives__text">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
               </p>
             </li>
             <li class="adjectives__item">
@@ -125,7 +131,8 @@
               </div>
               <h3 class="adjectives__subtitle heading-3">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="adjectives__text">
-                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
               </p>
             </li>
           </ul>
@@ -448,42 +455,66 @@
           <ul class="clients__list">
             <li class="clients__item">
               <a class="clients__link link--hover-border" href="">
-                <svg class="clients__icon link--hover-icon" width="106" height="60">
+                <svg
+                  class="clients__icon link--hover-icon"
+                  width="106"
+                  height="60"
+                >
                   <use href="./images/icons.svg#icon-client-1"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__link link--hover-border" href="">
-                <svg class="clients__icon link--hover-icon" width="106" height="60">
+                <svg
+                  class="clients__icon link--hover-icon"
+                  width="106"
+                  height="60"
+                >
                   <use href="./images/icons.svg#icon-client-2"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__link" href="">
-                <svg class="clients__icon link--hover-icon" width="106" height="60">
+                <svg
+                  class="clients__icon link--hover-icon"
+                  width="106"
+                  height="60"
+                >
                   <use href="./images/icons.svg#icon-client-3"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__link link--hover-border" href="">
-                <svg class="clients__icon link--hover-icon" width="106" height="60">
+                <svg
+                  class="clients__icon link--hover-icon"
+                  width="106"
+                  height="60"
+                >
                   <use href="./images/icons.svg#icon-client-4"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__link link--hover-border" href="">
-                <svg class="clients__icon link--hover-icon" width="106" height="60">
+                <svg
+                  class="clients__icon link--hover-icon"
+                  width="106"
+                  height="60"
+                >
                   <use href="./images/icons.svg#icon-client-5"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__link link--hover-border" href="">
-                <svg class="clients__icon link--hover-icon" width="106" height="60">
+                <svg
+                  class="clients__icon link--hover-icon"
+                  width="106"
+                  height="60"
+                >
                   <use href="./images/icons.svg#icon-client-6"></use>
                 </svg>
               </a>
@@ -533,7 +564,9 @@
             </address>
           </div>
           <div class="footer__socials-card socials-card">
-            <h3 class="socials-card__subtitle heading-3 heading-3--white">приєднуйтесь</h3>
+            <h3 class="socials-card__subtitle heading-3 heading-3--white">
+              приєднуйтесь
+            </h3>
             <ul class="socials-icons">
               <li class="socials-icons__item">
                 <a
@@ -604,7 +637,10 @@
                   placeholder="E-mail"
                 />
               </div>
-              <button class="form__button button button--medium button--icon" type="submit">
+              <button
+                class="form__button button button--medium button--icon"
+                type="submit"
+              >
                 Підписатися<svg class="button__icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
@@ -617,7 +653,11 @@
     <!----------modal window------->
     <div class="backdrop backdrop--hidden" data-modal>
       <div class="modal">
-        <button class="modal__button-close button-close" type="button" data-modal-close>
+        <button
+          class="modal__button-close button-close"
+          type="button"
+          data-modal-close
+        >
           <svg class="button-close__icon" width="11" height="11">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -626,27 +666,46 @@
         <form class="modal__form form form--vertical">
           <div class="form__input input-block">
             <label class="input-block__label" for="user-name"> Ім'я </label>
-            <input class="input-block__input" type="text" name="name" id="user-name" />
+            <input
+              class="input-block__input"
+              type="text"
+              name="name"
+              id="user-name"
+            />
             <svg class="input-block__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
           <div class="form__input input-block">
-            <label class="input-block__label" for="phone-number"> Телефон </label>
-            <input class="input-block__input" type="tel" name="phone_number" id="phone-number" />
+            <label class="input-block__label" for="phone-number">
+              Телефон
+            </label>
+            <input
+              class="input-block__input"
+              type="tel"
+              name="phone_number"
+              id="phone-number"
+            />
             <svg class="input-block__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-telephone"></use>
             </svg>
           </div>
           <div class="form__input input-block">
             <label class="input-block__label" for="user-email"> Пошта </label>
-            <input class="input-block__input" type="email" name="email" id="user-email" />
+            <input
+              class="input-block__input"
+              type="email"
+              name="email"
+              id="user-email"
+            />
             <svg class="input-block__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
           <div class="form__input input-block">
-            <label class="input-block__label" for="user-comment"> Коментар </label>
+            <label class="input-block__label" for="user-comment">
+              Коментар
+            </label>
             <textarea
               class="input-block__input input-block__textarea"
               name="comment"
@@ -668,7 +727,9 @@
           </label>
         </div>
         <div class="modal__button">
-          <button class="button button--medium" type="submit">Відправити</button>
+          <button class="button button--medium" type="submit">
+            Відправити
+          </button>
         </div>
       </div>
     </div>

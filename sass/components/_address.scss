@@ -1,0 +1,13 @@
+.address {
+  width: 231px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.address__item {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin: 0px;
+  }
+}

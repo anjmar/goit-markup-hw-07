@@ -1,0 +1,7 @@
+.works__list {
+  display: flex;
+  margin-top: 50px;
+}
+.works__item:not(:last-child) {
+  margin-right: 30px;
+}
