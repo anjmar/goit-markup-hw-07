@@ -14,10 +14,7 @@
   &--white {
     color: var(--white-text-color);
   }
-  &--dark-bg {
-    color: var(--white-text-color);
-    background-color: rgba(255, 255, 255, 0.1);
-  }
+
   &--hover-bg:hover,
   &--hover-bg:focus {
     color: var(--white-text-color);
