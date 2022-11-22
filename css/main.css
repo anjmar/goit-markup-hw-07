@@ -27,14 +27,6 @@
   margin: -1px;
 }
 
-.form-subscribe .form-subscribe__title {
-  margin-bottom: 20px;
-}
-
-.socials-card .socials-card__subtitle {
-  margin-bottom: 20px;
-}
-
 body {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
@@ -42,6 +34,10 @@ body {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.03em;
+}
+
+body.scrol-lock {
+  overflow: hidden;
 }
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -80,7 +76,7 @@ Sections
 */
 body {
   margin: 0; /* 1 */
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
+  font-family: "Roboto", sans-serif; /* 2 */
 }
 
 /*
@@ -355,9 +351,6 @@ textarea {
 .link:hover, .link:focus {
   color: var(--accent-text-color);
   transition: color var(--trns-fast);
-}
-.link--white {
-  color: var(--white-text-color);
 }
 .link--white {
   color: var(--white-text-color);
@@ -765,9 +758,6 @@ textarea {
 .footer__socials-card {
   margin-right: 93px;
 }
-.socials-card .footer__socials-card__subtitle {
-  margin-bottom: 20px;
-}
 
 .address {
   width: 231px;
@@ -781,17 +771,6 @@ textarea {
 }
 .address__item:last-child {
   margin: 0px;
-}
-
-.form {
-  display: flex;
-}
-.form--horizontal .form__button {
-  margin-left: 12px;
-}
-
-.form--horizontal {
-  flex-direction: row;
 }
 
 .input__input {
@@ -808,6 +787,75 @@ textarea {
 }
 .input__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.input-block {
+  position: relative;
+}
+.input-block:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.input-block__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+
+.input-block__input {
+  width: 100%;
+  padding: 11px 42px;
+  font: inherit;
+  cursor: pointer;
+  color: var(--black-text-color);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color var(--trns-fast);
+}
+.input-block__input:focus {
+  border-color: var(--accent-background-color);
+}
+.input-block__input:focus + .input-block__icon {
+  fill: var(--accent-text-color);
+}
+
+.input-block__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: var(--secondary-text-color);
+  transition: fill var(--trns-fast);
+}
+
+.input-block__textarea {
+  padding: 12px 16px;
+  height: 120px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.input-block__textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+}
+.form--vertical {
+  flex-direction: column;
+}
+.form--horizontal {
+  flex-direction: row;
+}
+.form--horizontal .form__button {
+  margin-left: 12px;
 }
 
 .buttons-set {
@@ -871,6 +919,8 @@ textarea {
 }
 
 .cards-set__border {
+  display: block;
+  text-align: left;
   z-index: 1;
   width: 370px;
   border: 1px solid #eee;
@@ -960,69 +1010,6 @@ textarea {
   right: 8px;
 }
 
-.form {
-  display: flex;
-  width: 448px;
-}
-.form--vertical {
-  flex-direction: column;
-}
-
-.input-block {
-  position: relative;
-}
-.input-block:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.input-block__label {
-  margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--primary-text-color);
-}
-
-.input-block__input {
-  width: 100%;
-  padding: 11px 42px;
-  font: inherit;
-  cursor: pointer;
-  color: var(--black-text-color);
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  transition: border-color var(--trns-fast);
-}
-.input-block__input:focus {
-  border-color: var(--accent-background-color);
-}
-.input-block__input:focus + .input-block__icon {
-  fill: var(--accent-text-color);
-}
-
-.input-block__icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  fill: var(--secondary-text-color);
-  transition: fill var(--trns-fast);
-}
-
-.input-block__textarea {
-  padding: 12px 16px;
-  height: 120px;
-  resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-.input-block__textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-}
-
 .form-checkbox {
   margin-bottom: 30px;
 }
@@ -1098,4 +1085,12 @@ textarea {
 .button-close__icon {
   color: #000;
   transition: fill var(--trns-fast);
+}
+
+.socials-card__subtitle {
+  margin-bottom: 20px;
+}
+
+.form-subscribe__title {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */

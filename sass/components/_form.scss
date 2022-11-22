@@ -1,0 +1,13 @@
+.form {
+  display: flex;
+  width: 100%;
+  &--vertical {
+    flex-direction: column;
+  }
+  &--horizontal {
+    flex-direction: row;
+    .form__button {
+      margin-left: 12px;
+    }
+  }
+}

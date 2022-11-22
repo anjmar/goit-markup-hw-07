@@ -1,7 +1,6 @@
 // utils
 @import './utils/variables';
 @import './utils/visualy-hidden';
-@import './utils/mixins';
 
 // base
 @import './base/base';
@@ -27,12 +26,15 @@
 @import './components/clients';
 @import './components/footer';
 @import './components/address';
-@import './components/form-horizontal';
+@import './components/input';
+@import './components/input-block';
+@import './components/form';
 @import './components/buttons-set';
 @import './components/cards-set';
 @import './components/backdrop';
 @import './components/modal-window';
-@import './components/form-vertical';
 @import './components/form-checkbox';
 @import './components/checkbox-custom';
 @import './components/button-close';
+@import './components/socials-card';
+@import './components/form-subscribe';

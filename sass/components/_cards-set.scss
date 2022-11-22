@@ -45,6 +45,8 @@
   color: var(--white-text-color);
 }
 .cards-set__border {
+  display: block;
+  text-align: left;
   z-index: 1;
   width: 370px;
   border: 1px solid #eee;

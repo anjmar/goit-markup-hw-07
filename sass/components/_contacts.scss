@@ -3,8 +3,10 @@
   align-items: center;
   margin-left: auto;
 }
-.auth-nav__item:not(:last-child) {
-  margin-right: 30px;
+.auth-nav__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .auth-nav__link {
   display: flex;
